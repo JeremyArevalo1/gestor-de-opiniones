@@ -7,7 +7,7 @@ import morgan from "morgan";
 import { dbConnection } from './mongo.js';
 import limiter from '../src/middlewares/validar-cant-peticiones.js';
 import authRoutes from '../src/auth/auth-router.js';
-//import userRoutes from "../src/users/user.routes.js"
+import userRoutes from "../src/users/user.routes.js"
  
 
 const middlewares = (app) => {
@@ -20,7 +20,8 @@ const middlewares = (app) => {
 }
 
 const routes = (app) => {
-    app.use('/adoptionSystem/v1/auth', authRoutes);
+    app.use('/gestordeopiniones/v1/auth', authRoutes);
+    app.use('/gestordeopiniones/v1/users', userRoutes);
 }
 
 const conectarDB = async () => {
