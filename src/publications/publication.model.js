@@ -2,7 +2,7 @@ import { model, Schema } from "mongoose";
 
 const PublicationSchema = Schema({
     user: {
-        type: String,
+        type: Schema.Types.ObjectId,
         ref: "user",
         required: true
     },
@@ -11,7 +11,7 @@ const PublicationSchema = Schema({
         required: true
     },
     category: {
-        type: String,
+        type: Schema.Types.ObjectId,
         ref: "category",
         required: true
     },
@@ -23,6 +23,10 @@ const PublicationSchema = Schema({
         type: Boolean,
         default: true
     },
+    comments: [{
+        type: Schema.Types.ObjectId,
+        ref: "comment",
+    }]
 },  
     {
         timestamps: true,

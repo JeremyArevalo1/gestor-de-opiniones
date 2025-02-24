@@ -84,7 +84,10 @@ export const createComment = async (req, res) => {
         });
 
         await comment.save();
-
+        
+        await Publication.findByIdAndUpdate(publicacion._id,{
+        $push: { comments: comment._id }
+        })
         res.status(200).json({
             success: true,
             comment

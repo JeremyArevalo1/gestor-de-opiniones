@@ -2,7 +2,7 @@ import { Schema, model } from "mongoose";
 
 const CommentSchema = Schema({
     author: {
-        type: String,
+        type: Schema.Types.ObjectId,
         ref: "user",
         required: true
     },

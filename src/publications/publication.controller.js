@@ -14,6 +14,13 @@ export const getPublications = async (req = request, res = response) =>{
             Publication.find(query)
                 .skip(Number(desde))
                 .limit(Number(limite))
+                .populate({
+                    path: 'comments', // Esto se refiere al campo 'comments' en la publicación
+                    populate: {
+                        path: 'author',  // Esto poblará la relación con el 'author' (Usuario que hizo el comentario)
+                        select: 'name' // Puedes especificar los campos que quieres mostrar del usuario
+                    }
+                })
         ])
 
         res.status(200).json({
@@ -25,7 +32,7 @@ export const getPublications = async (req = request, res = response) =>{
         res.status(500).json({
             success: false,
             msg: 'Error al obtener las publicaciones',
-            error
+            error: error.message
         })
     }
 }
