@@ -32,6 +32,12 @@ export const validarJWT = async(req, res, next) =>{
 
         req.usuario = usuario;
 
+        if (req.method !== 'DELETE' && req.body.username !== usuario.username) {
+            return res.status(403).json({
+                msg: 'No tienes permiso para realizar esta acción'
+            });
+        }
+
         next();
     } catch (e) {
         console.log(e);
