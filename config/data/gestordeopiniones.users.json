@@ -1,0 +1,90 @@
+[{
+  "_id": {
+    "$oid": "67bd68487a834b264973e49c"
+  },
+  "name": "Admin",
+  "surname": "Admin",
+  "username": "admin12",
+  "email": "admin@example.com",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$tz2fuRjX6LA6brO3fMn6cA$6pwBI/+DZn3eg5nqpCN/YzQJ4c/JKoqRjGb5H34pf+s",
+  "role": "ADMIN_ROLE",
+  "estado": true,
+  "createdAt": {
+    "$date": "2025-02-25T06:50:48.644Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-25T06:50:48.644Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67bd6a107a834b264973e4a6"
+  },
+  "name": "Angel",
+  "surname": "Osorio",
+  "username": "aosorio",
+  "email": "angel@gmail.com",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$IQBWmhn5sH3/D2dS0moB1Q$IkXkUKd++koCz4ZcRUlApSqMdFsr00K0SmLGZt4ur5Y",
+  "role": "USER_ROLE",
+  "estado": true,
+  "createdAt": {
+    "$date": "2025-02-25T06:58:24.142Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-25T06:58:24.142Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67bd6a207a834b264973e4a9"
+  },
+  "name": "Jeremy",
+  "surname": "Arevalo",
+  "username": "jarevalo",
+  "email": "jeremy@gmail.com",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$rdvmrAogYynT2lUpOEX/pg$xmB+CjfHR5NizA1bvnnOnrjAIM5J68y2Wg8nZHc2ip0",
+  "role": "USER_ROLE",
+  "estado": true,
+  "createdAt": {
+    "$date": "2025-02-25T06:58:40.243Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-25T06:58:40.243Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67bd6a2e7a834b264973e4ac"
+  },
+  "name": "Jorge",
+  "surname": "Peralta",
+  "username": "jperalta",
+  "email": "jorge@gmail.com",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$wDHkxTzOsF4pEhkYsPoSJQ$ML4nF65CJ/oUUlv5/veHnEFtN5q97fbXs5SFj3aj9r0",
+  "role": "USER_ROLE",
+  "estado": true,
+  "createdAt": {
+    "$date": "2025-02-25T06:58:54.568Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-25T06:58:54.568Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67bd6a407a834b264973e4af"
+  },
+  "name": "Kevin",
+  "surname": "Reyes",
+  "username": "kreyes",
+  "email": "kevin@gmail.com",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$S8/k5cHDFUKRY1BMxBQ4pw$hi5SRBH58w2k/lTEOWoZjanSepb53sZk0rYocfXAXEU",
+  "role": "USER_ROLE",
+  "estado": true,
+  "createdAt": {
+    "$date": "2025-02-25T06:59:12.988Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-25T06:59:12.988Z"
+  }
+}]

@@ -18,6 +18,10 @@ const CategorySchema = Schema({
         type: String,
         required: true
     },
+    publications: [{
+        type: Schema.Types.ObjectId,
+        ref: "publication",
+    }],
     estado: {
         type: Boolean,
         default: true

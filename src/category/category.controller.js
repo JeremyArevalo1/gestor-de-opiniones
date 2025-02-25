@@ -12,6 +12,9 @@ export const getCategories = async (req = request, res = response) =>{
             Category.find(query)
                 .skip(Number(desde))
                 .limit(Number(limite))
+                .populate({
+                    path: 'publications',
+                })
         ])
 
         res.status(200).json({

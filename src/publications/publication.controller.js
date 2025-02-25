@@ -15,10 +15,10 @@ export const getPublications = async (req = request, res = response) =>{
                 .skip(Number(desde))
                 .limit(Number(limite))
                 .populate({
-                    path: 'comments', // Esto se refiere al campo 'comments' en la publicación
+                    path: 'comments',
                     populate: {
-                        path: 'author',  // Esto poblará la relación con el 'author' (Usuario que hizo el comentario)
-                        select: 'name' // Puedes especificar los campos que quieres mostrar del usuario
+                        path: 'author',
+                        select: 'name email'
                     }
                 })
         ])
@@ -88,16 +88,20 @@ export const createPublications = async (req, res) => {
 
         const publication = new Publication({
             ...data,
-            user: usuario.username,
-            category: categoria.nameCategory  
+            user: usuario._id,
+            category: categoria._id  
         });
 
         await publication.save();
 
+        await Category.findByIdAndUpdate(categoria._id,{
+            $push: {publications: publication._id}
+        });
+
         res.status(200).json({
             success: true,
             publication
-        })
+        });
 
     } catch (error) {
         res.status(500).json({

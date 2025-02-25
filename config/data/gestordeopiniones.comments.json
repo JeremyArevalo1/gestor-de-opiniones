@@ -1,0 +1,19 @@
+[{
+  "_id": {
+    "$oid": "67bd6cce7a834b264973e50e"
+  },
+  "author": {
+    "$oid": "67bd6a2e7a834b264973e4ac"
+  },
+  "publicacion": {
+    "$oid": "67bd6a9d7a834b264973e4cd"
+  },
+  "comentario": "me interesan los audifonos amigo!",
+  "estado": true,
+  "createdAt": {
+    "$date": "2025-02-25T07:10:06.494Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-25T07:14:20.231Z"
+  }
+}]

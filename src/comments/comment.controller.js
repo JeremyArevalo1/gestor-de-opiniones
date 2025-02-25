@@ -79,7 +79,7 @@ export const createComment = async (req, res) => {
 
         const comment = new Comment({
             ...data,
-            author: usuario.username,
+            author: usuario._id,
             publicacion: publicacion._id
         });
 

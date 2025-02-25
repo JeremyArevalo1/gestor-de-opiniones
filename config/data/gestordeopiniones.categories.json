@@ -1,0 +1,111 @@
+[{
+  "_id": {
+    "$oid": "67bd68487a834b264973e4a0"
+  },
+  "admin": {
+    "$oid": "67bd68487a834b264973e49c"
+  },
+  "nameCategory": "Cocina",
+  "publications": [
+    {
+      "$oid": "67bd6b677a834b264973e4ea"
+    }
+  ],
+  "estado": true,
+  "createdAt": {
+    "$date": "2025-02-25T06:50:48.666Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-25T07:04:08.003Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67bd6a5f7a834b264973e4b5"
+  },
+  "admin": {
+    "$oid": "67bd68487a834b264973e49c"
+  },
+  "nameCategory": "Videojuegos",
+  "publications": [
+    {
+      "$oid": "67bd6c1f7a834b264973e4ff"
+    }
+  ],
+  "estado": true,
+  "createdAt": {
+    "$date": "2025-02-25T06:59:43.873Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-25T07:07:11.147Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67bd6a657a834b264973e4ba"
+  },
+  "admin": {
+    "$oid": "67bd68487a834b264973e49c"
+  },
+  "nameCategory": "Football",
+  "publications": [
+    {
+      "$oid": "67bd6b927a834b264973e4f0"
+    }
+  ],
+  "estado": true,
+  "createdAt": {
+    "$date": "2025-02-25T06:59:49.135Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-25T07:04:50.572Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67bd6a697a834b264973e4bf"
+  },
+  "admin": {
+    "$oid": "67bd68487a834b264973e49c"
+  },
+  "nameCategory": "Ropa",
+  "publications": [
+    {
+      "$oid": "67bd6b287a834b264973e4e3"
+    }
+  ],
+  "estado": true,
+  "createdAt": {
+    "$date": "2025-02-25T06:59:53.696Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-25T07:03:04.313Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67bd6a6f7a834b264973e4c4"
+  },
+  "admin": {
+    "$oid": "67bd68487a834b264973e49c"
+  },
+  "nameCategory": "Electronicos",
+  "publications": [
+    {
+      "$oid": "67bd6a9d7a834b264973e4cd"
+    },
+    {
+      "$oid": "67bd6abc7a834b264973e4d3"
+    },
+    {
+      "$oid": "67bd6ae57a834b264973e4db"
+    }
+  ],
+  "estado": true,
+  "createdAt": {
+    "$date": "2025-02-25T06:59:59.632Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-25T07:01:57.288Z"
+  }
+}]

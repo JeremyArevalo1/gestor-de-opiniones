@@ -1,0 +1,690 @@
+{
+	"info": {
+		"_postman_id": "5864f158-e0c1-4a9d-a9f9-4ac4935e8932",
+		"name": "gestor-de-opiniones",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37415271"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"jperalta\",\r\n    \"password\": \"12345678\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3002/gestordeopiniones/v1/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								"gestordeopiniones",
+								"v1",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Kevin\",\r\n    \"surname\": \"Reyes\",\r\n    \"username\": \"kreyes\",\r\n    \"email\": \"kevin@gmail.com\",\r\n    \"password\": \"12345678\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3002/gestordeopiniones/v1/auth/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								"gestordeopiniones",
+								"v1",
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "NewPassword",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    //\"email\": \"\",\r\n    \"username\": \"jarevalo\",  \r\n    \"currentPassword\": \"123456789\",\r\n    \"newPassword\": \"12345678\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3002/gestordeopiniones/v1/users/password/67b83277c4e955fa793f426c",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								"gestordeopiniones",
+								"v1",
+								"users",
+								"password",
+								"67b83277c4e955fa793f426c"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "Listar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3002/gestordeopiniones/v1/users/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								"gestordeopiniones",
+								"v1",
+								"users",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3002/gestordeopiniones/v1/users/67b83277c4e955fa793f426c",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								"gestordeopiniones",
+								"v1",
+								"users",
+								"67b83277c4e955fa793f426c"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Editar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Jeremy\",\r\n    \"surname\": \"Arevalo\",\r\n    \"username\": \"jarevalo\",\r\n    \"email\": \"jeremy@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3002/gestordeopiniones/v1/users/67bd581d5e5dff248327b42e",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								"gestordeopiniones",
+								"v1",
+								"users",
+								"67bd581d5e5dff248327b42e"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Categories",
+			"item": [
+				{
+					"name": "Listar",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3002/gestordeopiniones/v1/category/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								"gestordeopiniones",
+								"v1",
+								"category",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Agregar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Admin\",\r\n    \"nameCategory\": \"Electronicos\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3002/gestordeopiniones/v1/category/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								"gestordeopiniones",
+								"v1",
+								"category",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Editar",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"admin12\",\r\n    \"nameCategory\": \"Football\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3002/gestordeopiniones/v1/category/67bd597e5e5dff248327b448",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								"gestordeopiniones",
+								"v1",
+								"category",
+								"67bd597e5e5dff248327b448"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2I4MzE5N2M0ZTk1NWZhNzkzZjQyNjkiLCJpYXQiOjE3NDAzOTQyNTgsImV4cCI6MTc0MDM5Nzg1OH0.IuPau0jek9Fe3Sh5cY5lqtVP25uMa3Q4lsIbbyP-cmU",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3002/gestordeopiniones/v1/category/67b87eb0756f5b03269ed781",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								"gestordeopiniones",
+								"v1",
+								"category",
+								"67b87eb0756f5b03269ed781"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3002/gestordeopiniones/v1/category/67b87eb0756f5b03269ed781",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								"gestordeopiniones",
+								"v1",
+								"category",
+								"67b87eb0756f5b03269ed781"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Publicaciones",
+			"item": [
+				{
+					"name": "Agregar",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JkNmE0MDdhODM0YjI2NDk3M2U0YWYiLCJpYXQiOjE3NDA0NjcwMzgsImV4cCI6MTc0MDQ3MDYzOH0.ILINk4p-gEAd4X44zZUuIT_2-ewo7y5GARXlxr-w7Zs",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"kreyes\",\r\n    \"qualification\": \"Vendo juegos para Ps5\",\r\n    \"nameCategory\": \"Videojuegos\",\r\n    \"maintext\": \"vendo juegos para Ps5 nuevos y usados\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3002/gestordeopiniones/v1/publication/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								"gestordeopiniones",
+								"v1",
+								"publication",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Listar",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3002/gestordeopiniones/v1/publication/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								"gestordeopiniones",
+								"v1",
+								"publication",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3002/gestordeopiniones/v1/publication/67bc0fd3d483209909a31a4c",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								"gestordeopiniones",
+								"v1",
+								"publication",
+								"67bc0fd3d483209909a31a4c"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Editar",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JiZmExNWE3ZTI3OWRhYjU5NGVjOTEiLCJpYXQiOjE3NDAzODE1NTcsImV4cCI6MTc0MDM4NTE1N30.of3NatM-fRoYwcVmbNLuf3JEvNUscpsquApwt6ShNR0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"jarevalo\",\r\n    \"qualification\": \"Vendo Zapatitos\",\r\n    \"nameCategory\": \"Football\",\r\n    \"text\": \"vendo estos zapatos por falta de uso a Q800\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3002/gestordeopiniones/v1/publication/67bc02d151b0f691071be1cb",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								"gestordeopiniones",
+								"v1",
+								"publication",
+								"67bc02d151b0f691071be1cb"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JiZmExNWE3ZTI3OWRhYjU5NGVjOTEiLCJpYXQiOjE3NDAzOTEyMzgsImV4cCI6MTc0MDM5NDgzOH0.pNylKcaFXPhzt8OZ6f3BRBHOhmgN-seOI6G7fpqyv_I",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3002/gestordeopiniones/v1/publication/67bc4af257506747cc7a164f",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								"gestordeopiniones",
+								"v1",
+								"publication",
+								"67bc4af257506747cc7a164f"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Comentarios",
+			"item": [
+				{
+					"name": "Agregar",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JkNmEyZTdhODM0YjI2NDk3M2U0YWMiLCJpYXQiOjE3NDA0NjczOTYsImV4cCI6MTc0MDQ3MDk5Nn0.35phSP3QZxvjiEiU8PNySlWYzJKXLfQxresJVOkHR08",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"jperalta\",\r\n    \"publicacionId\": \"67bd6a9d7a834b264973e4cd\",\r\n    \"comentario\": \"me interesa la bocina amigo!\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3002/gestordeopiniones/v1/comment/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								"gestordeopiniones",
+								"v1",
+								"comment",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Listar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3002/gestordeopiniones/v1/comment/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								"gestordeopiniones",
+								"v1",
+								"comment",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3002/gestordeopiniones/v1/comment/67bc3713ec273956d03896cf",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								"gestordeopiniones",
+								"v1",
+								"comment",
+								"67bc3713ec273956d03896cf"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Editar",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JkNmEyZTdhODM0YjI2NDk3M2U0YWMiLCJpYXQiOjE3NDA0NjczOTYsImV4cCI6MTc0MDQ3MDk5Nn0.35phSP3QZxvjiEiU8PNySlWYzJKXLfQxresJVOkHR08",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"jperalta\",\r\n    \"publicacionId\": \"67bc3676863156bb4f48d926\",\r\n    \"comentario\": \"me interesan los audifonos amigo!\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3002/gestordeopiniones/v1/comment/67bd6cce7a834b264973e50e",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								"gestordeopiniones",
+								"v1",
+								"comment",
+								"67bd6cce7a834b264973e50e"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JiZmExNWE3ZTI3OWRhYjU5NGVjOTEiLCJpYXQiOjE3NDAzOTA3MDcsImV4cCI6MTc0MDM5NDMwN30.OnAxzyXDn3Xua6caLmvTqpYcr-luazs75EbtzFPuULU",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3002/gestordeopiniones/v1/comment/67bc3cc06bef2b9d3a34ad3e",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								"gestordeopiniones",
+								"v1",
+								"comment",
+								"67bc3cc06bef2b9d3a34ad3e"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

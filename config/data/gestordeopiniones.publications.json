@@ -1,0 +1,151 @@
+[{
+  "_id": {
+    "$oid": "67bd6a9d7a834b264973e4cd"
+  },
+  "user": {
+    "$oid": "67bd6a207a834b264973e4a9"
+  },
+  "qualification": "Vendo audifonos",
+  "category": {
+    "$oid": "67bd6a6f7a834b264973e4c4"
+  },
+  "maintext": "vendo audifonos por falta de uso",
+  "estado": true,
+  "comments": [
+    {
+      "$oid": "67bd6cce7a834b264973e50e"
+    }
+  ],
+  "createdAt": {
+    "$date": "2025-02-25T07:00:45.996Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-25T07:10:06.499Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67bd6abc7a834b264973e4d3"
+  },
+  "user": {
+    "$oid": "67bd6a207a834b264973e4a9"
+  },
+  "qualification": "Vendo Bocina",
+  "category": {
+    "$oid": "67bd6a6f7a834b264973e4c4"
+  },
+  "maintext": "vendo Bocina nueva",
+  "estado": true,
+  "comments": [],
+  "createdAt": {
+    "$date": "2025-02-25T07:01:16.885Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-25T07:01:16.885Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67bd6ae57a834b264973e4db"
+  },
+  "user": {
+    "$oid": "67bd6a107a834b264973e4a6"
+  },
+  "qualification": "Vendo iphone 11",
+  "category": {
+    "$oid": "67bd6a6f7a834b264973e4c4"
+  },
+  "maintext": "vendo iphone 11 por falta de uso",
+  "estado": true,
+  "comments": [],
+  "createdAt": {
+    "$date": "2025-02-25T07:01:57.284Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-25T07:01:57.284Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67bd6b287a834b264973e4e3"
+  },
+  "user": {
+    "$oid": "67bd6a2e7a834b264973e4ac"
+  },
+  "qualification": "Vendo camisas",
+  "category": {
+    "$oid": "67bd6a697a834b264973e4bf"
+  },
+  "maintext": "vendo bonitas camisas",
+  "estado": true,
+  "comments": [],
+  "createdAt": {
+    "$date": "2025-02-25T07:03:04.311Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-25T07:03:04.311Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67bd6b677a834b264973e4ea"
+  },
+  "user": {
+    "$oid": "67bd6a407a834b264973e4af"
+  },
+  "qualification": "Vendo sartenes y ollas",
+  "category": {
+    "$oid": "67bd68487a834b264973e4a0"
+  },
+  "maintext": "vendo satenes y ollas a diferentes precios",
+  "estado": true,
+  "comments": [],
+  "createdAt": {
+    "$date": "2025-02-25T07:04:07.999Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-25T07:04:07.999Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67bd6b927a834b264973e4f0"
+  },
+  "user": {
+    "$oid": "67bd6a407a834b264973e4af"
+  },
+  "qualification": "Vendo zapatos de football",
+  "category": {
+    "$oid": "67bd6a657a834b264973e4ba"
+  },
+  "maintext": "vendo zapatos de football seminuevos",
+  "estado": true,
+  "comments": [],
+  "createdAt": {
+    "$date": "2025-02-25T07:04:50.569Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-25T07:04:50.569Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67bd6c1f7a834b264973e4ff"
+  },
+  "user": {
+    "$oid": "67bd6a407a834b264973e4af"
+  },
+  "qualification": "Vendo juegos para Ps5",
+  "category": {
+    "$oid": "67bd6a5f7a834b264973e4b5"
+  },
+  "maintext": "vendo juegos para Ps5 nuevos y usados",
+  "estado": true,
+  "comments": [],
+  "createdAt": {
+    "$date": "2025-02-25T07:07:11.143Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-25T07:07:11.143Z"
+  }
+}]

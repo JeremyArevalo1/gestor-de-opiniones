@@ -15,7 +15,7 @@ const PublicationSchema = Schema({
         ref: "category",
         required: true
     },
-    text: {
+    maintext: {
         type: String,
         required: true
     },
