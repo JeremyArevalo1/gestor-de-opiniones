@@ -1,26 +1,5 @@
 [{
   "_id": {
-    "$oid": "67bd68487a834b264973e4a0"
-  },
-  "admin": {
-    "$oid": "67bd68487a834b264973e49c"
-  },
-  "nameCategory": "Cocina",
-  "publications": [
-    {
-      "$oid": "67bd6b677a834b264973e4ea"
-    }
-  ],
-  "estado": true,
-  "createdAt": {
-    "$date": "2025-02-25T06:50:48.666Z"
-  },
-  "updatedAt": {
-    "$date": "2025-02-25T07:04:08.003Z"
-  }
-},
-{
-  "_id": {
     "$oid": "67bd6a5f7a834b264973e4b5"
   },
   "admin": {
@@ -30,6 +9,9 @@
   "publications": [
     {
       "$oid": "67bd6c1f7a834b264973e4ff"
+    },
+    {
+      "$oid": "67be459373968bd73a873c56"
     }
   ],
   "estado": true,
@@ -37,7 +19,7 @@
     "$date": "2025-02-25T06:59:43.873Z"
   },
   "updatedAt": {
-    "$date": "2025-02-25T07:07:11.147Z"
+    "$date": "2025-02-25T22:34:59.662Z"
   }
 },
 {
@@ -107,5 +89,22 @@
   },
   "updatedAt": {
     "$date": "2025-02-25T07:01:57.288Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67be37befc2e5e2a660fe6b7"
+  },
+  "admin": {
+    "$oid": "67be36de9e328e75ada1fe42"
+  },
+  "nameCategory": "DeTodoUnPoco",
+  "publications": [],
+  "estado": true,
+  "createdAt": {
+    "$date": "2025-02-25T21:35:58.187Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-25T21:35:58.187Z"
   }
 }]

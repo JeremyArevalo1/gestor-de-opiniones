@@ -75,12 +75,12 @@ const defaultCategory = async () => {
             return;
         }
 
-        const category = await Category.findOne({ nameCategory: 'Cocina' });
+        const category = await Category.findOne({ nameCategory: 'DeTodoUnPoco' });
 
         if (!category) {
             const newCategory = new Category({
                 admin: admin._id,
-                nameCategory: 'Cocina'
+                nameCategory: 'DeTodoUnPoco'
             });
 
             await newCategory.save();

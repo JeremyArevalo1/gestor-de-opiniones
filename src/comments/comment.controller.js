@@ -87,7 +87,8 @@ export const createComment = async (req, res) => {
         
         await Publication.findByIdAndUpdate(publicacion._id,{
         $push: { comments: comment._id }
-        })
+        });
+        
         res.status(200).json({
             success: true,
             comment
@@ -145,7 +146,7 @@ export const deleteComment = async (req, res) => {
             });
         }
 
-        if (comment.author !== req.usuario.username) {
+        if (comment.author.toString() !== req.usuario._id.toString()) {
             return res.status(403).json({
                 msg: 'No tienes permiso para eliminar este comentario'
             });

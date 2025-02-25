@@ -1,37 +1,19 @@
 [{
   "_id": {
-    "$oid": "67bd68487a834b264973e49c"
+    "$oid": "67be36de9e328e75ada1fe42"
   },
   "name": "Admin",
   "surname": "Admin",
   "username": "admin12",
   "email": "admin@example.com",
-  "password": "$argon2id$v=19$m=65536,t=3,p=4$tz2fuRjX6LA6brO3fMn6cA$6pwBI/+DZn3eg5nqpCN/YzQJ4c/JKoqRjGb5H34pf+s",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$X9cVGqihDEFcj+ALENs7vg$difbhGd3tgGUAnZAcekQOUWjPuanmK1PPfabYKNcEwQ",
   "role": "ADMIN_ROLE",
   "estado": true,
   "createdAt": {
-    "$date": "2025-02-25T06:50:48.644Z"
+    "$date": "2025-02-25T21:32:14.675Z"
   },
   "updatedAt": {
-    "$date": "2025-02-25T06:50:48.644Z"
-  }
-},
-{
-  "_id": {
-    "$oid": "67bd6a107a834b264973e4a6"
-  },
-  "name": "Angel",
-  "surname": "Osorio",
-  "username": "aosorio",
-  "email": "angel@gmail.com",
-  "password": "$argon2id$v=19$m=65536,t=3,p=4$IQBWmhn5sH3/D2dS0moB1Q$IkXkUKd++koCz4ZcRUlApSqMdFsr00K0SmLGZt4ur5Y",
-  "role": "USER_ROLE",
-  "estado": true,
-  "createdAt": {
-    "$date": "2025-02-25T06:58:24.142Z"
-  },
-  "updatedAt": {
-    "$date": "2025-02-25T06:58:24.142Z"
+    "$date": "2025-02-25T21:32:14.675Z"
   }
 },
 {
@@ -49,7 +31,7 @@
     "$date": "2025-02-25T06:58:40.243Z"
   },
   "updatedAt": {
-    "$date": "2025-02-25T06:58:40.243Z"
+    "$date": "2025-02-25T23:07:01.962Z"
   }
 },
 {
@@ -86,5 +68,41 @@
   },
   "updatedAt": {
     "$date": "2025-02-25T06:59:12.988Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67be4beb44d616841c1a4b8f"
+  },
+  "name": "Santi",
+  "surname": "Contreras",
+  "username": "scontreras",
+  "email": "santi@gmail.com",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$gUSAJ1wX+TL1fFBfrhaDWQ$LPKCpwyBusA5wLmnBpSEzebUPhfNB5/KncG1hU62CFQ",
+  "role": "USER_ROLE",
+  "estado": true,
+  "createdAt": {
+    "$date": "2025-02-25T23:02:03.115Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-25T23:02:03.115Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67be4ecc72e00734d8ec4ed0"
+  },
+  "name": "Santos",
+  "surname": "Lopez",
+  "username": "slopes",
+  "email": "san@gmail.com",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$cOI6a4seYM4gJkaMKAlnLQ$ZlPBpg9nGmSgdhvcAnN6sJ0RQhAzO7yU1Kz9WBBEMWw",
+  "role": "USER_ROLE",
+  "estado": true,
+  "createdAt": {
+    "$date": "2025-02-25T23:14:20.963Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-25T23:14:20.963Z"
   }
 }]

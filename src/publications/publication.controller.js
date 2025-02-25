@@ -128,7 +128,7 @@ export const updatePublication = async (req, res) => {
                 });
             }
            
-            data.category = category.nameCategory;
+            data.category = category._id;
         }   
 
         const publicacion = await Publication.findByIdAndUpdate(id, data, {new: true});
@@ -160,11 +160,11 @@ export const deletePublication = async (req, res) => {
             });
         }
 
-        if (publication.user !== req.usuario.username) {
+        if (publication.user.toString() !== req.usuario._id.toString()) {
             return res.status(403).json({
                 msg: 'No tienes permiso para eliminar esta publicación'
             });
-        }
+        };
 
         const updatedPublication = await Publication.findByIdAndUpdate(id, { estado: false }, { new: true });
         

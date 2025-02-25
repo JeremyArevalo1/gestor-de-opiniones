@@ -10,7 +10,7 @@
     "$oid": "67bd6a6f7a834b264973e4c4"
   },
   "maintext": "vendo audifonos por falta de uso",
-  "estado": true,
+  "estado": false,
   "comments": [
     {
       "$oid": "67bd6cce7a834b264973e50e"
@@ -20,7 +20,7 @@
     "$date": "2025-02-25T07:00:45.996Z"
   },
   "updatedAt": {
-    "$date": "2025-02-25T07:10:06.499Z"
+    "$date": "2025-02-25T22:37:46.445Z"
   }
 },
 {
@@ -35,13 +35,17 @@
     "$oid": "67bd6a6f7a834b264973e4c4"
   },
   "maintext": "vendo Bocina nueva",
-  "estado": true,
-  "comments": [],
+  "estado": false,
+  "comments": [
+    {
+      "$oid": "67be48cd73968bd73a873c65"
+    }
+  ],
   "createdAt": {
     "$date": "2025-02-25T07:01:16.885Z"
   },
   "updatedAt": {
-    "$date": "2025-02-25T07:01:16.885Z"
+    "$date": "2025-02-25T22:53:41.217Z"
   }
 },
 {
@@ -77,13 +81,13 @@
     "$oid": "67bd6a697a834b264973e4bf"
   },
   "maintext": "vendo bonitas camisas",
-  "estado": true,
+  "estado": false,
   "comments": [],
   "createdAt": {
     "$date": "2025-02-25T07:03:04.311Z"
   },
   "updatedAt": {
-    "$date": "2025-02-25T07:03:04.311Z"
+    "$date": "2025-02-25T22:23:50.377Z"
   }
 },
 {
@@ -98,13 +102,13 @@
     "$oid": "67bd68487a834b264973e4a0"
   },
   "maintext": "vendo satenes y ollas a diferentes precios",
-  "estado": true,
+  "estado": false,
   "comments": [],
   "createdAt": {
     "$date": "2025-02-25T07:04:07.999Z"
   },
   "updatedAt": {
-    "$date": "2025-02-25T07:04:07.999Z"
+    "$date": "2025-02-25T22:18:48.328Z"
   }
 },
 {
@@ -119,13 +123,13 @@
     "$oid": "67bd6a657a834b264973e4ba"
   },
   "maintext": "vendo zapatos de football seminuevos",
-  "estado": true,
+  "estado": false,
   "comments": [],
   "createdAt": {
     "$date": "2025-02-25T07:04:50.569Z"
   },
   "updatedAt": {
-    "$date": "2025-02-25T07:04:50.569Z"
+    "$date": "2025-02-25T21:54:30.285Z"
   }
 },
 {
@@ -140,12 +144,33 @@
     "$oid": "67bd6a5f7a834b264973e4b5"
   },
   "maintext": "vendo juegos para Ps5 nuevos y usados",
-  "estado": true,
+  "estado": false,
   "comments": [],
   "createdAt": {
     "$date": "2025-02-25T07:07:11.143Z"
   },
   "updatedAt": {
-    "$date": "2025-02-25T07:07:11.143Z"
+    "$date": "2025-02-25T21:53:24.404Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67be459373968bd73a873c56"
+  },
+  "user": {
+    "$oid": "67bd6a207a834b264973e4a9"
+  },
+  "qualification": "Vendo juegos de mesa",
+  "category": {
+    "$oid": "67bd6a5f7a834b264973e4b5"
+  },
+  "maintext": "vendo juegos pde mesa nuevos y usados",
+  "estado": true,
+  "comments": [],
+  "createdAt": {
+    "$date": "2025-02-25T22:34:59.658Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-25T22:34:59.658Z"
   }
 }]

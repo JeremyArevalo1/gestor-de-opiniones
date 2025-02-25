@@ -147,6 +147,14 @@ export const updateCategory = async (req, res) => {
 export const deleteCategory = async (req, res) => {
     try {
         const { id } = req.params;
+        const categorie = await Category.findById(id);
+
+        if (!categorie) {
+            return res.status(404).json({
+                success: false,
+                message: 'categoria no encontrada'
+            });
+        }
 
         if (req.usuario.role !== 'ADMIN_ROLE') {
             return res.status(403).json({
@@ -154,29 +162,22 @@ export const deleteCategory = async (req, res) => {
                 message: 'No tienes permisos para eliminar categorías.',
             });
         }
-
-        const deletedCategory = await Category.findByIdAndDelete(id);
-
-        if (!deletedCategory) {
-            return res.status(404).json({
-                success: false,
-                message: 'Categoría no encontrada.',
-            });
-        }
+        
+        const updatedCategorie = await Category.findByIdAndUpdate(id, { estado: false }, { new: true });
 
         res.status(200).json({
             success: true,
-            message: 'Categoría eliminada con éxito.',
-            deletedCategory,
+            message: 'categoria eliminada exitosamente',
+            categorie: updatedCategorie
         });
-
     } catch (error) {
         res.status(500).json({
             success: false,
-            message: 'Error al eliminar la categoría.',
-            error: error.message,
+            message: 'Error al eliminar la categoria',
+            error
         });
     }
 };
+
 
 

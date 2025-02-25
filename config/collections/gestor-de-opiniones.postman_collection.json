@@ -1,9 +1,9 @@
 {
 	"info": {
-		"_postman_id": "5864f158-e0c1-4a9d-a9f9-4ac4935e8932",
+		"_postman_id": "d5f4620e-94c6-4a83-8f67-c835e316b9eb",
 		"name": "gestor-de-opiniones",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "37415271"
+		"_exporter_id": "37413957"
 	},
 	"item": [
 		{
@@ -47,7 +47,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\": \"Kevin\",\r\n    \"surname\": \"Reyes\",\r\n    \"username\": \"kreyes\",\r\n    \"email\": \"kevin@gmail.com\",\r\n    \"password\": \"12345678\"\r\n}",
+							"raw": "{\r\n    \"name\": \"Santos\",\r\n    \"surname\": \"Lopez\",\r\n    \"username\": \"slopes\",\r\n    \"email\": \"san@gmail.com\",\r\n    \"password\": \"12345678\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -131,40 +131,6 @@
 					"response": []
 				},
 				{
-					"name": "Buscar",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "http://localhost:3002/gestordeopiniones/v1/users/67b83277c4e955fa793f426c",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "3002",
-							"path": [
-								"gestordeopiniones",
-								"v1",
-								"users",
-								"67b83277c4e955fa793f426c"
-							]
-						}
-					},
-					"response": []
-				},
-				{
 					"name": "Editar",
 					"request": {
 						"method": "PUT",
@@ -179,7 +145,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3002/gestordeopiniones/v1/users/67bd581d5e5dff248327b42e",
+							"raw": "http://localhost:3002/gestordeopiniones/v1/users/67bd6a207a834b264973e4a9",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -189,7 +155,29 @@
 								"gestordeopiniones",
 								"v1",
 								"users",
-								"67bd581d5e5dff248327b42e"
+								"67bd6a207a834b264973e4a9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3002/gestordeopiniones/v1/users/67bd6a407a834b264973e4af",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								"gestordeopiniones",
+								"v1",
+								"users",
+								"67bd6a407a834b264973e4af"
 							]
 						}
 					},
@@ -272,13 +260,13 @@
 						"header": [
 							{
 								"key": "x-token",
-								"value": "",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JlMzZkZTllMzI4ZTc1YWRhMWZlNDIiLCJpYXQiOjE3NDA1MjA2OTMsImV4cCI6MTc0MDUyNDI5M30.pFsY-jax2kEHa8NqJTMvVquh0SWyFZ6l5qm6rtTYhBE",
 								"type": "text"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"username\": \"admin12\",\r\n    \"nameCategory\": \"Football\"\r\n}",
+							"raw": "{\r\n    \"username\": \"admin12\",\r\n    \"nameCategory\": \"Videojuegos\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -286,7 +274,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3002/gestordeopiniones/v1/category/67bd597e5e5dff248327b448",
+							"raw": "http://localhost:3002/gestordeopiniones/v1/category/67bd6a5f7a834b264973e4b5",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -296,7 +284,7 @@
 								"gestordeopiniones",
 								"v1",
 								"category",
-								"67bd597e5e5dff248327b448"
+								"67bd6a5f7a834b264973e4b5"
 							]
 						}
 					},
@@ -309,7 +297,7 @@
 						"header": [
 							{
 								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2I4MzE5N2M0ZTk1NWZhNzkzZjQyNjkiLCJpYXQiOjE3NDAzOTQyNTgsImV4cCI6MTc0MDM5Nzg1OH0.IuPau0jek9Fe3Sh5cY5lqtVP25uMa3Q4lsIbbyP-cmU",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JlMzZkZTllMzI4ZTc1YWRhMWZlNDIiLCJpYXQiOjE3NDA1MjA2OTMsImV4cCI6MTc0MDUyNDI5M30.pFsY-jax2kEHa8NqJTMvVquh0SWyFZ6l5qm6rtTYhBE",
 								"type": "text"
 							}
 						],
@@ -323,7 +311,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3002/gestordeopiniones/v1/category/67b87eb0756f5b03269ed781",
+							"raw": "http://localhost:3002/gestordeopiniones/v1/category/67bd6a5f7a834b264973e4b5",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -333,7 +321,14 @@
 								"gestordeopiniones",
 								"v1",
 								"category",
-								"67b87eb0756f5b03269ed781"
+								"67bd6a5f7a834b264973e4b5"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
 							]
 						}
 					},
@@ -345,7 +340,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3002/gestordeopiniones/v1/category/67b87eb0756f5b03269ed781",
+							"raw": "http://localhost:3002/gestordeopiniones/v1/category/67bd68487a834b264973e4a0",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -355,7 +350,7 @@
 								"gestordeopiniones",
 								"v1",
 								"category",
-								"67b87eb0756f5b03269ed781"
+								"67bd68487a834b264973e4a0"
 							]
 						}
 					},
@@ -373,13 +368,13 @@
 						"header": [
 							{
 								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JkNmE0MDdhODM0YjI2NDk3M2U0YWYiLCJpYXQiOjE3NDA0NjcwMzgsImV4cCI6MTc0MDQ3MDYzOH0.ILINk4p-gEAd4X44zZUuIT_2-ewo7y5GARXlxr-w7Zs",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JkNmEyMDdhODM0YjI2NDk3M2U0YTkiLCJpYXQiOjE3NDA1MjIzNzUsImV4cCI6MTc0MDUyNTk3NX0.fKvoXvyMJ2PXtvwOUX993pVkow7QZp4XpdeTS_6dm9Q",
 								"type": "text"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"username\": \"kreyes\",\r\n    \"qualification\": \"Vendo juegos para Ps5\",\r\n    \"nameCategory\": \"Videojuegos\",\r\n    \"maintext\": \"vendo juegos para Ps5 nuevos y usados\"\r\n}",
+							"raw": "{\r\n    \"username\": \"jarevalo\",\r\n    \"qualification\": \"Vendo juegos de mesa\",\r\n    \"nameCategory\": \"Videojuegos\",\r\n    \"maintext\": \"vendo juegos pde mesa nuevos y usados\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -443,7 +438,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3002/gestordeopiniones/v1/publication/67bc0fd3d483209909a31a4c",
+							"raw": "http://localhost:3002/gestordeopiniones/v1/publication/67bd6a9d7a834b264973e4cd",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -453,7 +448,7 @@
 								"gestordeopiniones",
 								"v1",
 								"publication",
-								"67bc0fd3d483209909a31a4c"
+								"67bd6a9d7a834b264973e4cd"
 							]
 						}
 					},
@@ -466,13 +461,13 @@
 						"header": [
 							{
 								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JiZmExNWE3ZTI3OWRhYjU5NGVjOTEiLCJpYXQiOjE3NDAzODE1NTcsImV4cCI6MTc0MDM4NTE1N30.of3NatM-fRoYwcVmbNLuf3JEvNUscpsquApwt6ShNR0",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JkNmEyMDdhODM0YjI2NDk3M2U0YTkiLCJpYXQiOjE3NDA1MjIzNzUsImV4cCI6MTc0MDUyNTk3NX0.fKvoXvyMJ2PXtvwOUX993pVkow7QZp4XpdeTS_6dm9Q",
 								"type": "text"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"username\": \"jarevalo\",\r\n    \"qualification\": \"Vendo Zapatitos\",\r\n    \"nameCategory\": \"Football\",\r\n    \"text\": \"vendo estos zapatos por falta de uso a Q800\"\r\n}",
+							"raw": "{\r\n    \"username\": \"jarevalo\",\r\n    \"qualification\": \"Vendo audifonos\",\r\n    \"nameCategory\": \"Electronicos\",\r\n    \"text\": \"vendo audifonos por falta de uso\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -480,7 +475,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3002/gestordeopiniones/v1/publication/67bc02d151b0f691071be1cb",
+							"raw": "http://localhost:3002/gestordeopiniones/v1/publication/67bd6a9d7a834b264973e4cd",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -490,7 +485,7 @@
 								"gestordeopiniones",
 								"v1",
 								"publication",
-								"67bc02d151b0f691071be1cb"
+								"67bd6a9d7a834b264973e4cd"
 							]
 						}
 					},
@@ -503,7 +498,7 @@
 						"header": [
 							{
 								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JiZmExNWE3ZTI3OWRhYjU5NGVjOTEiLCJpYXQiOjE3NDAzOTEyMzgsImV4cCI6MTc0MDM5NDgzOH0.pNylKcaFXPhzt8OZ6f3BRBHOhmgN-seOI6G7fpqyv_I",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JkNmEyMDdhODM0YjI2NDk3M2U0YTkiLCJpYXQiOjE3NDA1MjQwMTEsImV4cCI6MTc0MDUyNzYxMX0.HLnY6jKJEW5AhySAU9_2-E-HbvPv0TqkpR8nODbbSeQ",
 								"type": "text"
 							}
 						],
@@ -517,7 +512,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3002/gestordeopiniones/v1/publication/67bc4af257506747cc7a164f",
+							"raw": "http://localhost:3002/gestordeopiniones/v1/publication/67bd6abc7a834b264973e4d3",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -527,7 +522,7 @@
 								"gestordeopiniones",
 								"v1",
 								"publication",
-								"67bc4af257506747cc7a164f"
+								"67bd6abc7a834b264973e4d3"
 							]
 						}
 					},
@@ -545,13 +540,13 @@
 						"header": [
 							{
 								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JkNmEyZTdhODM0YjI2NDk3M2U0YWMiLCJpYXQiOjE3NDA0NjczOTYsImV4cCI6MTc0MDQ3MDk5Nn0.35phSP3QZxvjiEiU8PNySlWYzJKXLfQxresJVOkHR08",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JkNmEyZTdhODM0YjI2NDk3M2U0YWMiLCJpYXQiOjE3NDA1MjM3MTEsImV4cCI6MTc0MDUyNzMxMX0.Sc3RazxdvEXtW86SciM6_7uuJFYEBDb_er3jbt_XBic",
 								"type": "text"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"username\": \"jperalta\",\r\n    \"publicacionId\": \"67bd6a9d7a834b264973e4cd\",\r\n    \"comentario\": \"me interesa la bocina amigo!\"\r\n}",
+							"raw": "{\r\n    \"username\": \"jperalta\",\r\n    \"publicacionId\": \"67bd6abc7a834b264973e4d3\",\r\n    \"comentario\": \"me interesa la bocina amigo!\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -603,7 +598,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3002/gestordeopiniones/v1/comment/67bc3713ec273956d03896cf",
+							"raw": "http://localhost:3002/gestordeopiniones/v1/comment/67be48cd73968bd73a873c65",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -613,7 +608,7 @@
 								"gestordeopiniones",
 								"v1",
 								"comment",
-								"67bc3713ec273956d03896cf"
+								"67be48cd73968bd73a873c65"
 							]
 						}
 					},
@@ -626,13 +621,13 @@
 						"header": [
 							{
 								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JkNmEyZTdhODM0YjI2NDk3M2U0YWMiLCJpYXQiOjE3NDA0NjczOTYsImV4cCI6MTc0MDQ3MDk5Nn0.35phSP3QZxvjiEiU8PNySlWYzJKXLfQxresJVOkHR08",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JkNmEyZTdhODM0YjI2NDk3M2U0YWMiLCJpYXQiOjE3NDA1MjM3MTEsImV4cCI6MTc0MDUyNzMxMX0.Sc3RazxdvEXtW86SciM6_7uuJFYEBDb_er3jbt_XBic",
 								"type": "text"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"username\": \"jperalta\",\r\n    \"publicacionId\": \"67bc3676863156bb4f48d926\",\r\n    \"comentario\": \"me interesan los audifonos amigo!\"\r\n}",
+							"raw": "{\r\n    \"username\": \"jperalta\",\r\n    \"publicacionId\": \"67bd6abc7a834b264973e4d3\",\r\n    \"comentario\": \"me interesa esta bocina amigo!, y tienes mas?\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -640,7 +635,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3002/gestordeopiniones/v1/comment/67bd6cce7a834b264973e50e",
+							"raw": "http://localhost:3002/gestordeopiniones/v1/comment/67be48cd73968bd73a873c65",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -650,7 +645,7 @@
 								"gestordeopiniones",
 								"v1",
 								"comment",
-								"67bd6cce7a834b264973e50e"
+								"67be48cd73968bd73a873c65"
 							]
 						}
 					},
@@ -663,12 +658,12 @@
 						"header": [
 							{
 								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JiZmExNWE3ZTI3OWRhYjU5NGVjOTEiLCJpYXQiOjE3NDAzOTA3MDcsImV4cCI6MTc0MDM5NDMwN30.OnAxzyXDn3Xua6caLmvTqpYcr-luazs75EbtzFPuULU",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JkNmEyZTdhODM0YjI2NDk3M2U0YWMiLCJpYXQiOjE3NDA1MjQxNDIsImV4cCI6MTc0MDUyNzc0Mn0.ssmlqbA-ZZ-rKcH-z1q_A75jTfXGb10vejd1bTURhdE",
 								"type": "text"
 							}
 						],
 						"url": {
-							"raw": "http://localhost:3002/gestordeopiniones/v1/comment/67bc3cc06bef2b9d3a34ad3e",
+							"raw": "http://localhost:3002/gestordeopiniones/v1/comment/67bd6cce7a834b264973e50e",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -678,7 +673,7 @@
 								"gestordeopiniones",
 								"v1",
 								"comment",
-								"67bc3cc06bef2b9d3a34ad3e"
+								"67bd6cce7a834b264973e50e"
 							]
 						}
 					},
