@@ -9,6 +9,8 @@ import limiter from '../src/middlewares/validar-cant-peticiones.js';
 import authRoutes from '../src/auth/auth-router.js';
 import userRoutes from "../src/users/user.routes.js";
 import categoryRoutes from "../src/category/category.router.js";
+import publicationRoutes from "../src/publications/publication.router.js"
+import commentRoutes from "../src/comments/comment.router.js"
  
 
 const middlewares = (app) => {
@@ -24,6 +26,8 @@ const routes = (app) => {
     app.use('/gestordeopiniones/v1/auth', authRoutes);
     app.use('/gestordeopiniones/v1/users', userRoutes);
     app.use('/gestordeopiniones/v1/category', categoryRoutes);
+    app.use('/gestordeopiniones/v1/publication', publicationRoutes);
+    app.use('/gestordeopiniones/v1/comment', commentRoutes);
 }
 
 const conectarDB = async () => {

@@ -65,22 +65,19 @@ const createAdmin = async () => {
 
 const defaultCategory = async () => {
     try {
-        // Buscar al administrador por su nombre
-        const admin = await User.findOne({ name: 'Admin' }); // Cambia 'admin12' por el nombre real
+        const admin = await User.findOne({ name: 'Admin' });
 
         if (!admin) {
             console.log('Admin user not found');
             return;
         }
 
-        // Verificar si la categoría ya existe
-        const category = await Category.findOne({ nameCategory: 'cocina' });
+        const category = await Category.findOne({ nameCategory: 'Cocina' });
 
         if (!category) {
-            // Crear la nueva categoría con el admin usando el ObjectId
             const newCategory = new Category({
-                admin: admin._id,  // Aquí estamos pasando el ObjectId del admin
-                nameCategory: 'cocina'
+                admin: admin._id, 
+                nameCategory: 'Cocina'
             });
 
             await newCategory.save();
